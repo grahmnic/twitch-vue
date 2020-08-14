@@ -55,7 +55,7 @@ export default {
         method: 'GET',
         headers: {'Content-Type': 'application/json'}
       };
-      let baseUrl = 'https://twitch-vue.herokuapp.com/';
+      let baseUrl = 'https://twitch-express.herokuapp.com/';
       fetch(`${baseUrl}channels/${this.username}`, requestOptions)
         .then(response => {
           if (response.ok)
